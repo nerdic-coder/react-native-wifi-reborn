@@ -1,5 +1,5 @@
 {
-  "name": "react-native-wifi-reborn",
+  "name": "react-native-wifi-reborn-joinonce",
   "version": "4.3.7",
   "description": "A react-native implementation for viewing and connecting to Wifi networks on Android and iOS devices.",
   "types": "lib/types/index.d.ts",
@@ -32,16 +32,16 @@
   "author": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JuanSeBestia/react-native-wifi-reborn"
+    "url": "https://github.com/nerdic-coder/react-native-wifi-reborn"
   },
   "peerDependencies": {
     "react-native": ">=0.13"
   },
   "dependencies": {},
   "bugs": {
-    "url": "https://github.com/JuanSeBestia/react-native-wifi-reborn/issues"
+    "url": "https://github.com/nerdic-coder/react-native-wifi-reborn/issues"
   },
-  "homepage": "https://github.com/JuanSeBestia/react-native-wifi-reborn#readme",
+  "homepage": "https://github.com/nerdic-coder/react-native-wifi-reborn#readme",
   "license": "ISC",
   "devDependencies": {
     "@semantic-release/changelog": "^3.0.4",

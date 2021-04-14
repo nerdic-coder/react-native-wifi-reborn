@@ -64,7 +64,7 @@ RCT_EXPORT_METHOD(connectToSSIDPrefix:(NSString*)ssid
 
      if (@available(iOS 13.0, *)) {
          NEHotspotConfiguration* configuration = [[NEHotspotConfiguration alloc] initWithSSIDPrefix:ssid];
-         configuration.joinOnce = false;
+         configuration.joinOnce = true;
 
          [[NEHotspotConfigurationManager sharedManager] applyConfiguration:configuration completionHandler:^(NSError * _Nullable error) {
              if (error != nil) {
@@ -87,7 +87,7 @@ RCT_EXPORT_METHOD(connectToProtectedSSIDPrefix:(NSString*)ssid
 
     if (@available(iOS 13.0, *)) {
         NEHotspotConfiguration* configuration = [[NEHotspotConfiguration alloc] initWithSSIDPrefix:ssid passphrase:passphrase isWEP:isWEP];
-        configuration.joinOnce = false;
+        configuration.joinOnce = true;
 
         [[NEHotspotConfigurationManager sharedManager] applyConfiguration:configuration completionHandler:^(NSError * _Nullable error) {
             if (error != nil) {
@@ -117,7 +117,7 @@ RCT_EXPORT_METHOD(connectToProtectedSSID:(NSString*)ssid
         } else {
             configuration = [[NEHotspotConfiguration alloc] initWithSSID:ssid passphrase:passphrase isWEP:isWEP];
         }
-        configuration.joinOnce = false;
+        configuration.joinOnce = true;
 
         [[NEHotspotConfigurationManager sharedManager] applyConfiguration:configuration completionHandler:^(NSError * _Nullable error) {
             if (error != nil) {
